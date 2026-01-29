@@ -71,7 +71,7 @@ body::-webkit-scrollbar {
       }
 
       .hero-text-scroll {
-        @apply rotate-[-3deg] mb-8 border-[.5vw] border-milk;
+        @apply -rotate-3 mb-8 border-[.5vw] border-milk;
 
         .hero-subtitle {
           @apply bg-mid-brown;
@@ -93,7 +93,7 @@ body::-webkit-scrollbar {
   }
 
   .message-content {
-    @apply bg-[#7f3b2d] text-milk min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
+    @apply bg-red-brown text-milk min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
 
     .msg-wrapper {
       @apply 2xl:text-[8.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw] flex flex-col justify-center items-center md:gap-24 gap-14;
@@ -117,7 +117,7 @@ body::-webkit-scrollbar {
     }
 
     .msg-text-scroll {
-      @apply rotate-[3deg] 2xl:translate-y-5 -translate-y-5 absolute z-10 border-[.5vw] border-[#7f3b2d];
+      @apply rotate-3 2xl:translate-y-5 -translate-y-5 absolute z-10 border-[.5vw] border-red-brown;
     }
   }
 
@@ -125,7 +125,7 @@ body::-webkit-scrollbar {
     @apply min-h-dvh bg-milk;
 
     .flavor-text-scroll {
-      @apply rotate-[-3deg] md:translate-y-5 border-[.5vw] border-milk absolute z-10;
+      @apply -rotate-3 md:translate-y-5 border-[.5vw] border-milk absolute z-10;
     }
 
     .first-text-split h1 {
@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
     }
 
     .nutrition-text-scroll {
-      @apply rotate-[-3deg] border-[.5vw] border-[#e3d3bc] text-nowrap opacity-0 md:-mt-32 -mt-24;
+      @apply -rotate-3 border-[.5vw] border-milk-yellow text-nowrap opacity-0 md:-mt-32 -mt-24;
     }
 
     .nutrition-box {
@@ -190,22 +190,22 @@ body::-webkit-scrollbar {
   }
 
   .benefit-section {
-    @apply min-h-dvh bg-[#222123] overflow-hidden relative;
+    @apply min-h-dvh bg-black overflow-hidden relative;
 
     p {
       @apply text-milk font-paragraph text-center text-lg;
     }
 
     .first-title {
-      @apply rotate-[3deg] relative z-10;
+      @apply rotate-3 relative z-10;
     }
 
     .second-title {
-      @apply rotate-[-1deg] md:-translate-y-5;
+      @apply -rotate-1 md:-translate-y-5;
     }
 
     .third-title {
-      @apply rotate-[1deg] md:-translate-y-12 relative z-10;
+      @apply rotate-1 md:-translate-y-12 relative z-10;
     }
 
     .fourth-title {
@@ -213,7 +213,7 @@ body::-webkit-scrollbar {
     }
 
     .vd-pin-section {
-      @apply md:h-[110vh] h-dvh overflow-hidden md:!-translate-y-[15%] md:mt-0 mt-20;
+      @apply md:h-[110vh] h-dvh overflow-hidden md:-translate-y-[15%]! md:mt-0 mt-20;
 
       video {
         @apply size-full absolute inset-0 object-cover;
@@ -246,7 +246,7 @@ body::-webkit-scrollbar {
   }
 
   .footer-section {
-    @apply 2xl:min-h-dvh overflow-hidden relative bg-[#222123];
+    @apply 2xl:min-h-dvh overflow-hidden relative bg-black;
 
     .social-btn {
       @apply border border-[#faeade33] md:size-[5vw] size-14 md:p-0 p-3 flex justify-center items-center rounded-full hover:bg-[#ffffff1a] transition-colors cursor-pointer;
