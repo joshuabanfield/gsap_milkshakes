@@ -1,6 +1,12 @@
+import NavBar from "./components/Navbar"
+import HeroSection from "./sections/HeroSection"
+
 const App = () => {
   return (
-    <div>App</div>
+    <main>
+      <NavBar />
+      <HeroSection />
+    </main>
   )
 }
 
