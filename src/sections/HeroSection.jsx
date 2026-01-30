@@ -33,8 +33,15 @@ const HeroSection = () => {
             scrollTrigger: {
                 trigger: ".hero-container",
                 start: "1% top",
-                markers: true
+                end: "bottom top",
+                scrub: true,
             }
+        });
+        heroTl.to(".hero-container", {
+            rotate: 7,
+            scale: 0.9,
+            yPercent: 30,
+            ease: "power1.inOut"
         })
     });
 

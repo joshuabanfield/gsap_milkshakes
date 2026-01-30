@@ -10,6 +10,7 @@ const App = () => {
     <main>
       <NavBar />
       <HeroSection />
+      {/* <div className="h-dvh"></div> */}
     </main>
   )
 }
