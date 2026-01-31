@@ -39,6 +39,20 @@ const MessageSection = () => {
             }
         });
 
+        const revealTl = gsap.timeline({
+            delay: 1,
+            scrollTrigger: {
+                trigger: ".msg-text-scroll",
+                start: "top 65%",
+            }
+        });
+
+        revealTl.to(".msg-text-scroll", {
+            duration: 1,
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            rotate: "-2.5",
+            ease: "circ.inOut"
+        });
     });
 
     return (
@@ -49,7 +63,7 @@ const MessageSection = () => {
                         <h1 className="first-message">
                             Stir up your fearless past and
                         </h1>
-                        <div className="msg-text-scroll">
+                        <div style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }} className="msg-text-scroll">
                             <div className="bg-light-brown md:pb-5 pb-3 px-5">
                                 <h2 className="text-red-brown">
                                     Fuel Up
