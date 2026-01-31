@@ -12,7 +12,7 @@ const App = () => {
       <NavBar />
       <HeroSection />
       <MessageSection />
-      {/* <div className="h-dvh"></div> */}
+      <div className="h-dvh"></div>
     </main>
   )
 }

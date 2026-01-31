@@ -26,7 +26,18 @@ const MessageSection = () => {
                 end: "30% center",
                 scrub: true
             }
-        })
+        });
+        gsap.to(secondMsgSplit.words, {
+            color: "#faeade",
+            ease: "power1.in",
+            stagger: 1,
+            scrollTrigger: {
+                trigger: ".second-message",
+                start: "top center",
+                end: "bottom center",
+                scrub: true
+            }
+        });
 
     });
 
