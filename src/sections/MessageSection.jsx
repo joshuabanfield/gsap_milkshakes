@@ -53,6 +53,21 @@ const MessageSection = () => {
             rotate: "-2.5",
             ease: "circ.inOut"
         });
+
+        const paraTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".message-content p",
+                start: "top center"
+            }
+        });
+
+        paraTl.from(paragraphSplit.words, {
+            yPercent: 300,
+            rotate: 3,
+            ease: "power1.inOut",
+            duration: 1,
+            stagger: 0.01
+        });
     });
 
     return (
