@@ -1,3 +1,4 @@
+import FlavourSlider from "../components/FlavourSlider"
 import FlavourTitle from "../components/FlavourTitle"
 
 const FlavourSection = () => {
@@ -7,7 +8,9 @@ const FlavourSection = () => {
             <div className="lg:w-[57%] flex-none h-80 lg:h-full md:mt-20 xl:mt-0">
                 <FlavourTitle />
             </div>
-            <div className=""></div>
+            <div className="h-full">
+                <FlavourSlider />
+            </div>
         </div>
     </section>
   )
