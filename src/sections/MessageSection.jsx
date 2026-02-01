@@ -50,7 +50,7 @@ const MessageSection = () => {
         revealTl.to(".msg-text-scroll", {
             duration: 1,
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            rotate: "-2.5",
+            rotate: -2.5,
             ease: "circ.inOut"
         });
 
